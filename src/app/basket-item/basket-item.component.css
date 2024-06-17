@@ -1,0 +1,28 @@
+:host>span {
+  display: block;
+  margin-bottom: 12px;
+}
+
+:host>button {
+  color: #00f;
+  margin-top: 20px;
+  border: none;
+}
+
+:host>button:hover {
+  text-decoration: underline;
+}
+
+.product-name {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.product-name span:last-child {
+  margin-left: auto;
+}
+
+.total-item-price {
+  font-weight: 600;
+  margin-top: 40px;
+}

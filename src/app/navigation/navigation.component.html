@@ -1,0 +1,28 @@
+<nav>
+  <ul>
+    <li>
+      <a
+        [routerLink]="['/products']"
+        routerLinkActive="active">Products
+      </a>
+    </li>
+    <li>
+      <a
+        [routerLink]="['/basket']"
+        routerLinkActive="active">Basket
+      </a>
+    </li>
+  </ul>
+</nav>
+
+@if (totalBasketCount() > 0) {
+  <div class="basket-count">
+    <p>{{ totalBasketCount() }}</p>
+  </div>
+}
+
+@if (basketService.totalItemsCount() > 0 && messageService.message !== '') {
+  <div class="message-wrapper">
+    <p  class="fade-message-in-out" (animationend)="messageService.resetMessage()">{{ messageService.message }}</p>
+  </div>
+}

@@ -1,0 +1,39 @@
+.quantity-selector {
+	display: flex;
+	height: 34px;
+}
+
+button {
+	width: 34px;
+	padding: 0;
+	color: #000;
+	border-radius: 5px 0 0 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+button, p {
+	background-color: #fff;
+	border: 1px solid #616161;
+}
+
+button.basket-link {
+	flex-grow: 1;
+	border-radius: 0;
+}
+
+button:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+p {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 12px;
+}
+
+button.basket-link, p {
+	border-right: none;
+	border-left: none;
+}

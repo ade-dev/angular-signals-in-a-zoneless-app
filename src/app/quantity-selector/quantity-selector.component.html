@@ -1,0 +1,23 @@
+<div class="quantity-selector">
+  <button
+    (click)="updateBasketQuantity('minus')"
+    [disabled]="basketItemCount() === 0">
+    &ndash;
+  </button>
+
+  @if(linkToBasket()){
+    <button class="basket-link" (click)="router.navigate(['/basket'])">
+      <span>
+        {{ basketItemCount() }}&nbsp;{{ linkToBasket() }}
+      </span>
+    </button>
+  }
+  @else {
+    <p>
+      <span>
+        {{ basketItemCount() }} 
+      </span>
+    </p>
+  }
+  <button (click)="updateBasketQuantity('plus')">+</button>
+</div>

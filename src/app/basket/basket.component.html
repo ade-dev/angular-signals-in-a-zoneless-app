@@ -1,0 +1,18 @@
+<div class="basket-content">
+  @if (totalBasketCount() > 0) {
+    <p class="total">
+      <span>Total - {{ totalBasketCount() }}</span>
+      <span> {{ totalLabel() }}: </span>
+      <span>£{{ totalBasketPrice() | number: "1.2-2" }}</span>
+    </p>
+    <ul>
+      @for (product of basketItems(); track product.product.id) {
+        <li>
+          <app-basket-item [item]="product"></app-basket-item>
+        </li>
+      }
+    </ul>
+  } @else {
+      <p>There are no items in your basket</p>
+  }
+</div>

@@ -1,0 +1,12 @@
+<div class="product-name">
+  <span>{{ item().product.name }}</span>
+  <span>£{{ item().product.price | number: "1.2-2" }}&nbsp; each</span>
+</div>
+<span>{{ item().product.description }}</span>
+<span class="total-item-price">£{{ totalProductPrice() | number: "1.2-2" }}</span>
+<div>
+  <app-quantity-selector [productId]="item().product.id"></app-quantity-selector>
+</div>
+<button (click)="removeFromBasket()">
+  Remove from basket
+</button>

@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.content {
+  display: grid;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 968px;
+  margin-bottom: 3rem;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content p {
+  margin-top: 1.5rem;
+}
+
+.content-row {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0 20px 0 0;
+}
+
+.navigation {
+  margin: 0 auto;
+  padding: 20px 20px 0 0;
+  position: fixed;
+  max-width: 968px;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  display: block;
+}
+
+.main-content {
+  margin-top: 67px;
+}

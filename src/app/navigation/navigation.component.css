@@ -1,0 +1,70 @@
+:host {
+  display: flex;
+  position: relative;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.active {
+  padding: 0 0 6px 0;
+  border-bottom: 3px solid #00f;
+}
+
+.basket-count {
+  height: 20px;
+  text-align: center;
+  background-color: #008000;
+  color: #ffffff;
+}
+
+.basket-count p {
+  font-weight: bold;
+  margin: 1px 0;
+  padding: 0 8px;
+}
+
+.message-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.875rem;
+  border-radius: 3px;
+  z-index: 5
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-message-in-out {
+  margin: 0;
+  padding: 4px 8px 5px;
+  color: #fff;
+  background-color: #000;
+  animation: fade-in-out 2s linear forwards;
+}
