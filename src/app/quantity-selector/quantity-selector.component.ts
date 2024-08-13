@@ -17,9 +17,12 @@ export class QuantitySelectorComponent {
   linkToBasket = input<string>();
 
   updateBasketQuantity(operator: string) {
-    this.basketItemCount() === 1 && operator === 'minus'
-      ? this.basketService.removeItem(this.productId())
-      : this.basketService.updateItemQuantity(this.productId(), operator);
+    if (this.basketItemCount() === 1 && operator === 'minus') {
+      this.basketService.removeItem(this.productId());
+    }
+    else {
+      this.basketService.updateItemQuantity(this.productId(), operator);
+    }
   }
 
   basketItemCount(): number {

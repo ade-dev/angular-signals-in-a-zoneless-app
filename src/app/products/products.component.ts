@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal, effect } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
 import { QuantitySelectorComponent } from '../quantity-selector/quantity-selector.component';
 import { BasketService } from '../services/basket.service';
