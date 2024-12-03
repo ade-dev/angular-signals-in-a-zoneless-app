@@ -6,6 +6,8 @@ See article at: https://clade.co.uk/angular-signals
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
+Version 2.0.0 - Project updated to Angular v19.0.1 Using Node version 22.0.0
+
 ### Developer: [Ade Oyebadejo](https://www.clade.co.uk)
 
 ## How to run application locally

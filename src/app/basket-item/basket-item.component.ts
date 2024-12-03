@@ -6,7 +6,6 @@ import { BasketService } from '../services/basket.service';
 
 @Component({
   selector: 'app-basket-item',
-  standalone: true,
   imports: [DecimalPipe, QuantitySelectorComponent],
   templateUrl: './basket-item.component.html',
   styleUrl: './basket-item.component.css'

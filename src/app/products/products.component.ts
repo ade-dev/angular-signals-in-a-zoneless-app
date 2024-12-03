@@ -7,7 +7,6 @@ import { products } from '../data/products-list';
 
 @Component({
   selector: 'app-products',
-  standalone: true,
   imports: [DecimalPipe, QuantitySelectorComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'

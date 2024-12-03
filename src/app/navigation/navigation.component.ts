@@ -5,7 +5,6 @@ import { BasketService } from '../services/basket.service';
 
 @Component({
   selector: 'app-navigation',
-  standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css'
